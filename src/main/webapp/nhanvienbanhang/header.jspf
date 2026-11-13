@@ -1,0 +1,21 @@
+<%-- Thanh tieu de dung chung cho cac trang nhan vien ban hang (include tinh) --%>
+<%
+    model.SaleStaff1 hdStaff = (model.SaleStaff1) session.getAttribute("staff");
+    String hdName = "Nhân viên";
+    if (hdStaff != null && hdStaff.getFullName() != null) {
+        model.FullName1 hdFn = hdStaff.getFullName();
+        hdName = hdFn.getHo() + " " + (hdFn.getTendem() == null ? "" : hdFn.getTendem() + " ") + hdFn.getTen();
+    }
+%>
+<header class="topbar">
+    <div class="inner">
+        <a class="brand" href="UISaleStaffHome1.jsp">
+            <span class="logo">🍽</span>
+            <span>RestMan<small>Nhân viên bán hàng</small></span>
+        </a>
+        <div class="user">
+            <span class="avatar"><%=hdName.substring(hdName.lastIndexOf(' ') + 1, hdName.lastIndexOf(' ') + 2).toUpperCase()%></span>
+            <span class="name"><%=hdName%></span>
+        </div>
+    </div>
+</header>

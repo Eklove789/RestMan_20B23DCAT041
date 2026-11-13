@@ -1,0 +1,20 @@
+<%-- Thanh tieu de dung chung cho cac trang khach hang (include tinh) --%>
+<%
+    model.Customer1 hdCustomer = (model.Customer1) session.getAttribute("customer");
+    String hdName = "Quý khách";
+    if (hdCustomer != null && hdCustomer.getFullName() != null) {
+        hdName = hdCustomer.getFullName().getTen();
+    }
+%>
+<header class="topbar">
+    <div class="inner">
+        <a class="brand" href="UICustomerHome1.jsp">
+            <span class="logo">🍽</span>
+            <span>RestMan<small>Nhà hàng RestMan</small></span>
+        </a>
+        <div class="user">
+            <span class="avatar"><%=hdName.substring(0, 1).toUpperCase()%></span>
+            <span class="name"><%=hdName%></span>
+        </div>
+    </div>
+</header>
