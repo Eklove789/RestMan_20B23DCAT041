@@ -6,6 +6,19 @@
     // dung nhu trang dang nhap se lam (customer / staff), sau do goi trang chu cua vai tro do.
     String role = request.getParameter("role");
     if ("customer".equals(role)) {
+        // khach hang Nguyen Thu Trang (tblMember1.id = 6, username trangnt)
+        FullName1 fnKH = new FullName1();
+        fnKH.setHo("Nguyễn");
+        fnKH.setTendem("Thu");
+        fnKH.setTen("Trang");
+        Account1 accKH = new Account1();
+        accKH.setUsername("trangnt");
+        accKH.setVaitro("Khách hàng");
+        Customer1 customer = new Customer1();
+        customer.setId(6);
+        customer.setFullName(fnKH);
+        customer.setAccount(accKH);
+        session.setAttribute("customer", customer);
         response.sendRedirect("khachhang/UICustomerHome1.jsp");
         return;
     }

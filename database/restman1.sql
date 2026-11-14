@@ -458,13 +458,14 @@ INSERT INTO tblMember1 (id, username, password, vaitro, trangthaitk, ho, tendem,
 (2, 'lanvt', '123456', 'Nhân viên bán hàng', 'Hoạt động', 'Vũ', 'Thị', 'Lan', '2000-11-03', 'Nữ', 'lanvt@restman.vn', '0987000002', NULL, NULL),
 (3, 'tuanlm', '123456', 'Khách hàng', 'Hoạt động', 'Lê', 'Minh', 'Tuấn', '1992-08-20', 'Nam', 'tuanlm@gmail.com', '0912345678', NULL, 3),
 (4, 'tuanna', '123456', 'Khách hàng', 'Hoạt động', 'Nguyễn', 'Anh', 'Tuấn', '1988-02-14', 'Nam', NULL, '0903456789', NULL, NULL),
-(5, 'namhv', '123456', 'Khách hàng', 'Hoạt động', 'Hoàng', 'Văn', 'Nam', '1995-12-01', 'Nam', NULL, '0934567890', NULL, NULL);
+(5, 'namhv', '123456', 'Khách hàng', 'Hoạt động', 'Hoàng', 'Văn', 'Nam', '1995-12-01', 'Nam', NULL, '0934567890', NULL, NULL),
+(6, 'trangnt', '123456', 'Khách hàng', 'Hoạt động', 'Nguyễn', 'Thu', 'Trang', '1998-04-18', 'Nữ', 'trangnt@gmail.com', '0978123456', NULL, NULL);
 
 INSERT INTO tblStaff1 (tblMember1id, vitri, ngayvaolam) VALUES
 (1, 'Bán hàng', '2024-03-01'), (2, 'Bán hàng', '2023-08-15');
 INSERT INTO tblSaleStaff1 (tblStaff1id, tblArea1id) VALUES (1, 1), (2, 3);
 INSERT INTO tblCustomer1 (tblMember1id, ngaydangki) VALUES
-(3, '2025-02-10'), (4, '2025-06-01'), (5, '2025-11-20');
+(3, '2025-02-10'), (4, '2025-06-01'), (5, '2025-11-20'), (6, '2026-03-05');
 
 INSERT INTO tblCardRank1 (id, ten, diemtoithieu, tilegiamgia) VALUES
 (1, 'Thường', 0, 0), (2, 'Bạc', 1000, 5), (3, 'Vàng', 5000, 10);
