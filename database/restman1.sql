@@ -364,17 +364,17 @@ INSERT INTO tblDishCategory1 (id, ten, mota) VALUES
 
 -- Mon an (mã hiển thị = MA + id 3 chữ số) va combo (CB + id)
 INSERT INTO tblMenuItem1 (id, ten, gia, mota, anh, trangthai) VALUES
-(12, 'Bò lúc lắc', 185000, 'Thăn bò Úc cắt hạt lựu, xóc lửa lớn với tỏi, ớt chuông, hành tây; ăn kèm khoai tây chiên và salad.', 'MA012.svg', 'Đang phục vụ'),
-(15, 'Bò nướng lá lốt', 129000, 'Thịt bò bắp băm cuốn lá lốt nướng than hoa, chấm mắm nêm.', 'MA015.svg', 'Đang phục vụ'),
-(31, 'Lẩu bò nhúng dấm', 459000, 'Thịt bò bắp thái mỏng nhúng nồi nước dấm dừa, ăn kèm rau sống và bánh tráng.', 'MA031.svg', 'Đang phục vụ'),
-(44, 'Gỏi bò bóp thấu', 99000, 'Thịt bò tái chanh bóp cùng hành tây, rau thơm, đậu phộng.', 'MA044.svg', 'Đang phục vụ'),
-(18, 'Gà nướng muối ớt', 189000, 'Gà ta nướng muối ớt, da giòn.', 'MA018.svg', 'Đang phục vụ'),
-(25, 'Canh chua cá lóc', 119000, 'Canh chua miền Nam với cá lóc, dứa, cà chua, bạc hà.', 'MA025.svg', 'Đang phục vụ'),
-(50, 'Cơm trắng', 10000, NULL, 'MA050.svg', 'Đang phục vụ'),
-(46, 'Salad cá hồi', 109000, 'Cá hồi áp chảo cùng rau xà lách, sốt mè rang.', 'MA046.svg', 'Đang phục vụ'),
-(60, 'Tiramisu', 55000, 'Bánh tiramisu kiểu Ý.', 'MA060.svg', 'Đang phục vụ'),
-(20, 'Phở bò tái', 69000, 'Món đã ngừng bán - không hiện khi tìm kiếm.', 'MA020.svg', 'Ngừng bán'),
-(33, 'Cá kho tộ', 139000, 'Cá lóc kho tộ - dùng để thử ngoại lệ 6.1 (tìm "cá").', 'MA033.svg', 'Tạm hết'),
+(12, 'Bò lúc lắc', 185000, 'Thăn bò Úc cắt hạt lựu, xóc lửa lớn với tỏi, ớt chuông, hành tây; ăn kèm khoai tây chiên và salad.', 'MA012.jpg', 'Đang phục vụ'),
+(15, 'Bò nướng lá lốt', 129000, 'Thịt bò bắp băm cuốn lá lốt nướng than hoa, chấm mắm nêm.', 'MA015.jpg', 'Đang phục vụ'),
+(31, 'Lẩu bò nhúng dấm', 459000, 'Thịt bò bắp thái mỏng nhúng nồi nước dấm dừa, ăn kèm rau sống và bánh tráng.', 'MA031.jpg', 'Đang phục vụ'),
+(44, 'Gỏi bò bóp thấu', 99000, 'Thịt bò tái chanh bóp cùng hành tây, rau thơm, đậu phộng.', 'MA044.jpg', 'Đang phục vụ'),
+(18, 'Gà nướng muối ớt', 189000, 'Gà ta nướng muối ớt, da giòn.', 'MA018.jpg', 'Đang phục vụ'),
+(25, 'Canh chua cá lóc', 119000, 'Canh chua miền Nam với cá lóc, dứa, cà chua, bạc hà.', 'MA025.jpg', 'Đang phục vụ'),
+(50, 'Cơm trắng', 10000, NULL, 'MA050.jpg', 'Đang phục vụ'),
+(46, 'Salad cá hồi', 109000, 'Cá hồi áp chảo cùng rau xà lách, sốt mè rang.', 'MA046.jpg', 'Đang phục vụ'),
+(60, 'Tiramisu', 55000, 'Bánh tiramisu kiểu Ý.', 'MA060.jpg', 'Đang phục vụ'),
+(20, 'Phở bò tái', 69000, 'Món đã ngừng bán - không hiện khi tìm kiếm.', 'MA020.jpg', 'Ngừng bán'),
+(33, 'Cá kho tộ', 139000, 'Cá lóc kho tộ - dùng để thử ngoại lệ 6.1 (tìm "cá").', 'MA033.jpg', 'Tạm hết'),
 (3, 'Combo Gia đình 4 người', 575000, 'Combo cho nhóm 4 người.', NULL, 'Đang phục vụ'),
 (7, 'Combo Hẹn hò 2 người', 359000, 'Combo cho 2 người.', NULL, 'Đang phục vụ'),
 (9, 'Combo Trưa văn phòng', 179000, 'Combo đã hết hạn - không hiện khi xem combo.', NULL, 'Đang phục vụ');
@@ -428,9 +428,9 @@ INSERT INTO tblDishIngredient1 (dinhluong, tblDish1id, tblIngredient1id) VALUES
 INSERT INTO tblUnit1 (id, ten) VALUES (6, 'Lon'), (7, 'Ly');
 INSERT INTO tblDishCategory1 (id, ten, mota) VALUES (7, 'Rau', NULL), (8, 'Đồ uống', NULL);
 INSERT INTO tblMenuItem1 (id, ten, gia, mota, anh, trangthai) VALUES
-(52, 'Rau muống xào tỏi', 56000, 'Rau muống xào tỏi, giòn và xanh.', 'MA052.svg', 'Đang phục vụ'),
-(70, 'Bia Hà Nội (lon)', 25000, 'Bia Hà Nội lon 330 ml.', 'MA070.svg', 'Đang phục vụ'),
-(72, 'Nước cam ép', 45000, 'Cam sành ép nguyên chất.', 'MA072.svg', 'Đang phục vụ');
+(52, 'Rau muống xào tỏi', 56000, 'Rau muống xào tỏi, giòn và xanh.', 'MA052.jpg', 'Đang phục vụ'),
+(70, 'Bia Hà Nội (lon)', 25000, 'Bia Hà Nội lon 330 ml.', 'MA070.jpg', 'Đang phục vụ'),
+(72, 'Nước cam ép', 45000, 'Cam sành ép nguyên chất.', 'MA072.jpg', 'Đang phục vụ');
 INSERT INTO tblDish1 (tblMenuItem1id, thoigianchebien, tblDishCategory1id, tblUnit1id) VALUES
 (52, 8, 7, 1), (70, 1, 8, 6), (72, 5, 8, 7);
 
