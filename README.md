@@ -56,3 +56,4 @@ Trong mã, mỗi đoạn xử lí có ghi chú `buoc n` trùng số thứ tự t
 
 Dữ liệu thử theo kịch bản: module 1 tìm “bò” (4 món, Bò lúc lắc có trong 2 combo);
 module 2 tìm khách “Tuấn” (bàn B05 và V02), thẻ thành viên TV000128, hoá đơn HD0157.
+Để demo lại từ đầu, chạy `tools/reset-db-restman.bat` (nạp lại `database/restman1.sql` vào MySQL cổng 3307).

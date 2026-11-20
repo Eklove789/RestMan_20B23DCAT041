@@ -4,7 +4,7 @@
     // nhan thong tin khach hang dang nhap (luu trong session sau khi dang nhap)
     // buoc 1: khach hang click link Tim thong tin mon an -> buoc 2: goi trang UISearchDish1.jsp
     Customer1 customer = (Customer1) session.getAttribute("customer");
-    String tenKH = "Quý khách";
+    String tenKH = "Quý khách ";
     if (customer != null && customer.getFullName() != null) {
         FullName1 fn = customer.getFullName();
         tenKH = fn.getHo() + " " + (fn.getTendem() == null ? "" : fn.getTendem() + " ") + fn.getTen();
